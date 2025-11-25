@@ -20,7 +20,7 @@ set /p x=Introduce el primer numero:
 set /a x<0 goto %opcion%
 set /p y=Introduce el segundo numero:
 set /a z=x+y
-echo El resultado de la suma de %x% y %y% es %z%
+echo El resultado de la Suma de %x% y %y% es %z%
 pause
 goto inicio
 
@@ -28,7 +28,7 @@ goto inicio
 set /p x=Introduce el primer numero:
 set /p y=Introduce el segundo numero:
 set /a z=x-y
-echo El resultado de la resta de %x% menos %y% es %z%
+echo El resultado de la Resta de %x% menos %y% es %z%
 pause
 goto Inicio
 
@@ -36,7 +36,7 @@ goto Inicio
 set /p x=Introduce el primer numero:
 set /p y=Introduce el segundo numero:
 set /a z=x*y
-echo El resultado de la suma de %x% y %y% es %z%
+echo El resultado de la Multiplicacion de %x% y %y% es %z%
 pause
 goto inicio
 
@@ -44,7 +44,7 @@ goto inicio
 set /p x=Introduce el primer numero:
 set /p y=Introduce el segundo numero:
 set /a z=x/y
-echo El resultado de la suma de %x% y %y% es %z%
+echo El resultado de la Divison de %x% y %y% es %z%
 pause
 goto inicio
 
