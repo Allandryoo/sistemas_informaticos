@@ -1,24 +1,22 @@
 @echo off
 
-set contador = 0
-set sumador = 0
-set mayor = %1
-set menor = %1
+set contador=0
+set sumador=0
+set mayor=%1
+set menor=%1
 
 for %%i in (%*) do (
 
-    if %mayor% LSS %%i (
-        %mayor%=%%i
+    if %%i GTR %mayor% (
+        set mayor=%%i
     )
-    if %menor% GTR %%i (
-        %menor%=%%i
+    if %%i LSS %menor% (
+        set menor=%%i
     )
-    set /a contar=%contador% + 1
-    set /a sumar= %sumador% + %%i
-    set /a %%i + 1
+    set /a contador=contador + 1
+    set /a sumador=sumador + %%i
 )
-echo Hay %contar% numeros
-echo La suma total: %sumar%
-echo El numero mas grande es %mayor%
-echo El numero mas pequeño es %menor%
-
+echo Hay %contador% numeros
+echo La suma total: %sumador%
+echo El numero mayor es: %mayor%
+echo El numero menor es: %menor%
