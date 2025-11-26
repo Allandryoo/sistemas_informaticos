@@ -1,13 +1,12 @@
 @echo off
 
+:inicio
+cls
+
 set contador=0
 set sumador=0
 set mayor=%1
 set menor=%1
-
-:inicio
-
-cls
 
 echo C: Contador de numeros introducidos.
 echo P: Numero menor.
