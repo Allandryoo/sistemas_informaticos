@@ -35,7 +35,8 @@ if "%3" == "bin" (
     pause
     goto F
 ) else (
-
+    echo Parametros validos: 'bin', 'oct', 'dec', 'hex'
+    goto F
 )
 
 :oct
@@ -56,7 +57,8 @@ if "%3" == "bin" (
     pause
     goto F
 ) else (
-    
+    echo Parametros validos: 'bin', 'oct', 'dec', 'hex'
+    goto F
 )
 
 :dec
@@ -77,8 +79,8 @@ if "%3" == "bin" (
     pause
     goto F
 ) else (
-    
-)
+    echo Parametros validos: 'bin', 'oct', 'dec', 'hex'
+    goto F)
 
 :hex
 if "%3" == "bin" (
@@ -98,8 +100,8 @@ if "%3" == "bin" (
     pause
     goto F
 ) else (
-    
+    echo Parametros validos: 'bin', 'oct', 'dec', 'hex'
+    goto F
 )
 
 :F
-echo :/
