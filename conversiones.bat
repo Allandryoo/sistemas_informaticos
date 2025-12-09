@@ -2,14 +2,17 @@
 
 if "%1" == "" (
     echo Formato de uso correcto: %0 tipo_dato numero tipo_convertir
+    echo tipo de datos disponibles: bin:binario, oct:octal, dec:decimal, hex:hexadecimal.
     goto F
 )
 if "%2" == "" (
     echo Formato de uso correcto: %0 %1 numero tipo_convertir
+    echo tipo de datos disponibles: bin:binario, oct:octal, dec:decimal, hex:hexadecimal.
     goto F
 )
 if "%3" == "" (
     echo Formato de uso correcto: %0 %1 %2 tipo_convertir
+    echo tipo de datos disponibles: bin:binario, oct:octal, dec:decimal, hex:hexadecimal.
     goto F
 )
 

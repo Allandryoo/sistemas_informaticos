@@ -7,7 +7,10 @@ if "%1" == "" (
 
 set numero=%1
 
-if %numero% %% 2 == 0 (
+set /a div=numero / 2
+set /a div=div * 2 
+
+if %div% EQU %numero% (
     echo %1 es par
     goto F
 ) else (
