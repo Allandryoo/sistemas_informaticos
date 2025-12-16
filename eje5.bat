@@ -1,7 +1,7 @@
 @echo off 
 
 if "%1" == "" (
-    echo Formato de uso correcto: %1 numero
+    echo Formato de uso correcto: %0 numero
     goto F
 )
 
