@@ -6,6 +6,7 @@ if "%1" == "" (
 )
 
 :inicio
+
 cls
 
 echo E: Mostrar en orden si son pares e impares.
@@ -30,24 +31,7 @@ pause
 goto inicio
 
 :C
-:loop
-if "%1" == "" (
-    goto F
-)
-set numero=%1
 
-set /a div=numero / 2
-set /a div=div * 2 
-
-if %div% EQU %numero% (
-    echo %1 es par
-    shift
-    goto loop
-) else (
-    echo %1 es impar
-    shift
-    goto loop
-)
 pause
 goto inicio
 
